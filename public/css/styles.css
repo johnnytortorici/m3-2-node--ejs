@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
 header {
     flex: 0 0 60px;
     display: flex;
@@ -16,7 +16,15 @@ header {
     border-bottom: 1px solid #808080;
     padding: 0 24px;
 }
-  
+
+nav {
+    text-align: right;
+    padding: 0 24px;
+}
+
+a:link, a:visited, a:active { color: black;}
+a:hover { text-decoration: none; }
+
 .main {
     flex: 1 0 auto;
     padding: 24px;
@@ -36,6 +44,38 @@ ol, ul { margin-bottom: 1em; }
     margin-bottom: 24px;
     min-height: 200px;
     padding: 18px;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fafafa;
+    background-color: #383e56;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.home-nav-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.home-nav-col {
+    width: 250px;
+    padding: 30px 0 10px;
+    text-align: center;
+    background-color: #f69e7b;
+    
+}
+
+.home-nav-col h3 {
+    background-color: #eedad1;
+    padding: 10px 0;
 }
 
 h3 {

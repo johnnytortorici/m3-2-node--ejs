@@ -12,6 +12,7 @@ const q7 = (req, res) => res.render('pages/question7');
 const q8 = (req, res) => res.render('pages/question8');
 const q9 = (req, res) => res.render('pages/question9');
 const q10 = (req, res) => res.render('pages/question10');
+const home = (req, res) => res.render('pages/homepage');
 
 express()
   // This will give us will log more info to the console. see https://www.npmjs.com/package/morgan
@@ -32,11 +33,7 @@ express()
   .get('/question8', q8)
   .get('/question9', q9)
   .get('/question10', q10)
-
-  // this serves up the homepage
-  .get('/', (req, res) => {
-    res.send("This is the homepage... it's empty :(");
-  })
+  .get('/', home)
 
   // this is our catch all endpoint. If a user navigates to any endpoint that is not
   // defined above, they get to see our 404 page.
