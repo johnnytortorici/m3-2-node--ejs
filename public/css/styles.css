@@ -38,6 +38,15 @@ ol, ul { margin-bottom: 1em; }
     padding: 18px;
 }
 
+h3 {
+    width: 100%;
+}
+
+.homer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .question .sample {
     border: 1px solid #cacaca;
     margin: 12px 32px 6px 0;

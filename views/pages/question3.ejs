@@ -11,9 +11,17 @@
     <h2>Part 1</h2>
     <div class="content">
       <%- include('../partials/questions/3') %>
-      <div class="box answer">
+      <div class="box answer homer">
         <h3>Answer</h3>
-        <!-- render answer here -->
+        <img src="<%= homer.imageUrl %>" alt="Homer Jay Simpson" />
+        <div>
+          <p>Name: <%= homer.name %></p>
+          <p>Date of birth: <%= homer.dob %></p>
+          <p>Profession: <%= homer.profession %></p>
+          <p>Favorite food: <%= homer.favoriteFood %></p>
+          <p>Favorite beverage: <%= homer.favoriteBeverage %></p>
+        </div>
+        
       </div>
     </div>
   </div>

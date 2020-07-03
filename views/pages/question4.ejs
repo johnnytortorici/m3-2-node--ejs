@@ -13,7 +13,11 @@
       <%- include('../partials/questions/4') %>
       <div class="box answer">
         <h3>Answer</h3>
-        <!-- render answer here -->
+        <ol>
+          <% topThreeGirlNames.forEach( (name) => { %>
+            <li><%= name %></li>
+          <% }); %>
+        </ol>
       </div>
     </div>
   </div>
